@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
- * main - Prints all possiblecombinations of single-digit numbers
+ * main - my entry point
  *
  * Description: it prints all possible
  * combination of single digits
- * Return: Always 0
+ * Return: 0 always
  */
 int main(void)
 {
@@ -23,4 +22,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
- }
+}
