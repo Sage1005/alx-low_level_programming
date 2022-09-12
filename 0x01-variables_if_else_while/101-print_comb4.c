@@ -16,7 +16,6 @@ int main(void)
 		{
 			for (c = b + 1; c <= 9; c++)
 			{
-
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
 				putchar((c % 10) + '0');
@@ -29,8 +28,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	putchar('\n);
 	return (0);
 }
-
-		
