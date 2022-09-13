@@ -5,6 +5,7 @@
  * Description: print out _putchar
  * Return: 0 when successful
  */
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
