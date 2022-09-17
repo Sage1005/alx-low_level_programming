@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * print_numbers - Prints the numbers, from 0 to 9, followed by a new line
+ * print_numbers - Prints the numbers, from 0 to 9,
+ * Except 2 and 4
  *
- *
- * Return: is zero
+ * Return: void
  */
 void print_numbers(void)
 {
-	char digits;
+	int c = 48;
 
-	for (digits = '0'; digits <= '9'; digits++)
+	while (c < 58)
 	{
-		_putchar(digits);
+		if (!(c == '2' || c == '4'))
+			_putchar(c);
+		c++;
 	}
 	_putchar('\n');
 }
