@@ -1,25 +1,23 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
+ * more_numbers - nmbr fct
  *
+ * Return: no return
  */
 
 void more_numbers(void)
 {
-	int replay, count;
 
-	for (replay = 0; replay <= 9; replay++)
+	int i, j;
+	for (i = 1; i <= 10; i++)
 	{
-		for (count = 0; count <= 14; count++)
+		for (j = 0; j < 15; j++)
 		{
-                        if (count >= 10 && count <= 14)
-			{
-				_putchar((count / 10) + '0');
-			}
-			_putchar((count % 10) + '0');
+			if (j >= 10)
+				_putchar('1');
+			_putchar(j % 10 + '0');
 		}
-		-putchar('\n');
+		_putchar('\n');
 	}
 }
-
