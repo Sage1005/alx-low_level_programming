@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _strcat - function to concatenate two strings and return a new string
+ * _strcat - function to concatenate two strings 
+ * and return a new string
  *
  * @dest: string 1
  * @src: string 2
@@ -13,6 +14,7 @@ char *_strcat(char *dest, char *src)
 	char *p;
 
 	while (*(dest + i) != '\0')
+		i++;
 
 	while (!(*(src + j) != '\0'))
 	{
