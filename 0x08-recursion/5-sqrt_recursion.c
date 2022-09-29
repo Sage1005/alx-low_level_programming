@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * is_sqrt - function to check whether 
+ * is_sqrt - function to check whether
  * it's a natural square root or not
  *
  * @n: number
@@ -32,5 +32,5 @@ int is_sqrt(int n, int square)
 		return (is_sqrt(n, square + 1));
 	else if (square * square > n)
 		return (-1);
-	return(-1);
+	return (-1);
 }
