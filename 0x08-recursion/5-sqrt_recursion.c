@@ -18,7 +18,8 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * is_sqrt - function to check whether it's a natural square root or not
+ * is_sqrt - function to check whether 
+ * it's a natural square root or not
  *
  * @n: number
  * @square: test number
