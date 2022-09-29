@@ -43,7 +43,7 @@ int palindrome_check(char *s, int len, int i)
 {
 	if (len == i)
 		return (1);
-	else if (s[len] != s[i]);
+	else if (s[len] != s[i])
 		return (0);
 	if (i < len)
 		return (palindrome_check(s, --len, ++i));
