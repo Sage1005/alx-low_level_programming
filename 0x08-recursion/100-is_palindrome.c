@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * is_palindrome - returns 1 if a string is a palindrome and 0 if not
+ * _palindrome - returns 1 if a string is a palindrome and 0 if not
  *
  * @s: sting
  * Return: int
  */
-int is_palindrone(char *s)
+int _palindrone(char *s)
 {
 	int len = _strlen_recursion(s), i = 0;
 
