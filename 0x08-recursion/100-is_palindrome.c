@@ -6,7 +6,7 @@
  * @s: string
  * Return: int
  */
-int is_palindrone(char *s)
+int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s), i = 0;
 
