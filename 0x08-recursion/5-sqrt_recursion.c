@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
  *
  * @n: number
  * @square: test number
- * @Return: int
+ * Return: int
  */
 int is_sqrt(int n, int square)
 {
@@ -32,5 +32,5 @@ int is_sqrt(int n, int square)
 		return (is_sqrt(n, square + 1));
 	else if (square * square > n)
 		return (-1);
-	return (-1);
+	return(-1);
 }
