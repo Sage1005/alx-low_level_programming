@@ -33,7 +33,7 @@ int _strlen_recursion(char *s)
 
 /**
  * palindrome_check - returns 1 if palindrome and 0 if not
- * 
+ *
  * @s: string
  * @len: length of string
  * @i: counter variable
