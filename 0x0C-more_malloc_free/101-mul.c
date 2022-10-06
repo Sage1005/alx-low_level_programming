@@ -4,8 +4,8 @@
 #include <string.h>
 /**
  * _isNum - check if is a number
- * @num: string to check
- * Return: 1 is numm, 0 not num
+ *@num: string to check
+ *Return: 1 is numm, 0 not num
  */
 int _isNum(char *num)
 {
@@ -21,10 +21,10 @@ int _isNum(char *num)
 
 /**
  * *_memset - copies a character to the firstn characters of the string pointed
- * @s: original string
- * @b: value to remplace
- * @n: number of bytes
- * Return: s (string modify)
+ *@s: original string
+ *@b: value to remplace
+ *@n: number of bytes
+ *Return: s (string modify)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -37,8 +37,8 @@ char *_memset(char *s, char b, unsigned int n)
 
 /**
  * _strlen - returns the lenght of a string
- * @s: poiter of character
- * Return: the length of a string
+ *@s: poiter of character
+ *Return: the length of a string
  */
 int _strlen(char *s)
 {
@@ -52,9 +52,9 @@ int _strlen(char *s)
 
 /**
  * main - multiple 2 positive numbers
- * @argc: argument counter
- * @argv: number to multiply
- * Return: 0 (success)
+ *@argc: argument counter
+ *@argv: number to multiply
+ *Return: 0 (success)
  */
 int main(int argc, char *argv[])
 {
