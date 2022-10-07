@@ -1,10 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 #include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 void *malloc(size_t size);
+int check_for_digits(char **av);
 void free(void *ptr);
 void exit(int status);
 void *malloc_checked(unsigned int b);
