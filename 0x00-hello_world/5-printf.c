@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints the phrase with proper grammar,
- * but the outcome is a piece of art,
- * Return: 0 if exited bproperly, non-zero otherwise
+ * main - entry point
+ *
+ * Description: gives with proper grammar, but the outcome is a piece of art,
+ * Return: 0 if exited and non_zero if otherwise
  */
 int main(void)
 {

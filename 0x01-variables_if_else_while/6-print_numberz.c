@@ -1,19 +1,20 @@
 #include <stdio.h>
-
 /**
- *  main - Prints all single digit numbers of 10 starting from 0,
- *  only use putchar and without char variables
+ * main - entry point
  *
- *  Return: Always 0
+ * Description: it prints numbers
+ * from 0 to 9 using putchar
+ * Return: 0 always
  */
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
-
+	for (i = 0; i < 10; i++)
+		putchar((i % 10) + '0');
 	putchar('\n');
 
 	return (0);
 }
+
+

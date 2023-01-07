@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * is_digit - checks if a string contains a non-digit char
+ * @s: string to be evaluated
  * Return: 0 if a non-digit is found, 1 otherwise
  */
 int is_digit(char *s)
@@ -18,7 +18,6 @@ int is_digit(char *s)
 	}
 	return (1);
 }
-
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -47,7 +46,6 @@ void errors(void)
 
 /**
  * main - multiplies two positive numbers
- * _putchar - writes c character in the stdout
  * @argc: number of arguments
  * @argv: array of arguments
  * Return: always 0 (Success)

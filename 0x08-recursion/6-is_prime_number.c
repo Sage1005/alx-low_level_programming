@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
- * is_prime_number - returns 1 if the input integer is a prime number
- * otherwise returns 0
- *
+ * is_prime_number - returns 1 if the input integer is a prime number,
  * @n: number
+ *
  * Return: int
  */
 int is_prime_number(int n)
@@ -19,10 +17,10 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime - returns 1 if the input integer is a prime number,
- * otherwise returns 0
- * @n: number
+ * is_prime - returns 1 if the input integer is a prime number
+ * @n: num
  * @i: dividend
+ *
  * Return: int
  */
 int is_prime(int n, int i)

@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_sign - prints the sign of a number
- * @n: positive, zero or negative integer
- * Return: 1 if it's positive, 0 if it's negative and -1 if it's negative
+ * print_sign - prints the sign of a given number
+ * @n: the interger to be tested
+ *
+ * Return: 1, 0, -1 when greater than 0, if zero, less zero respectively
  */
-
 int print_sign(int n)
 {
 	if (n > 0)

@@ -1,6 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main- Entry point
  * @argc: the number of parameters.
@@ -16,6 +15,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 
 	n = atoi(argv[1]);
 	if (n < 0)

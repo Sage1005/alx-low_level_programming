@@ -4,7 +4,7 @@
  * main - entry point
  *
  * Description: prints and that piece..
- * Return: 1 if successful
+ *Return: 1 if sucessful
  */
 int main(void)
 {

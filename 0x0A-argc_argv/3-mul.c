@@ -1,24 +1,24 @@
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - prints all arguments it receives
- *
- * @argc: argument count
- * @argv: argument vector
- * Return: int
+ * main - prints name
+ * @argc: params
+ * @argv: array
+ * Return: 0 
  */
 int main(int argc, char *argv[])
 {
-	int m1, m2;
+	int result, num1, num2;
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
-	m1 = atoi(argv[1]);
-	m2 = atoi(argv[2]);
-	printf("%d\n", m1 * m2);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+
+	printf("%d\n", result);
 	return (0);
 }

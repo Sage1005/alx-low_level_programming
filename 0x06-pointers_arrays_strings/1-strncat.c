@@ -1,28 +1,34 @@
 #include "main.h"
-
 /**
- * _strncat - function to concatenate two strings and return a new string
- * with n elements of the appended string
+ * _strncat - concatenate 2 strings
+ * @dest: input
+ * @src: input
+ * @n: integer
  *
- * @dest: string 1
- * @src: string 2
- * @n: number of chars to include from appended string
- * Return: char pointer
+ * Return: temp
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
-	char *p;
+	int srclen = 0, i = 0;
+	char *temp = dest, *start = src;
 
-	while (*(dest + i) != '\0')
-		i++;
-	while (!(*(src + j) == '\0' || j == n))
+	while (*src)
 	{
-		*(dest + i) = *(src + j);
-		i++;
-		j++;
+		srclen++;
+		src++;
 	}
-	*(dest + i) = '\0';
-	p = dest;
-	return (p);
+
+	while (*dest)
+		dest++;
+
+	if (n > srclen)
+		n = srclen;
+
+	src = start;
+
+	for (; i < n; i++)
+		*dest++ = *src++;
+
+	*dest = '\0';
+	return (temp);
 }

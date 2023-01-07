@@ -3,12 +3,9 @@
  * add - adds two integers
  * @a: first integer
  * @b: second integer
- * Return: sum
- *
+ * Return: 0 always
  */
 int add(int a, int b)
 {
-	int sum = a + b;
-
-	return (sum);
+	return (a + b);
 }

@@ -1,1 +1,1 @@
-My first readme
+ C - More pointers, arrays and strings

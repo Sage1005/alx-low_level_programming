@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * factorial - returns the factorial of a given number or -1 if n is negative
- *
+ * factorial - returns the fact of a given numb
  * @n: number to factorize
+ *
  * Return: int
  */
 int factorial(int n)

@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * _memset - fills memory with a constant byte
- *
+ * _memset - memory fills with constant byte
  * @s: pointer to string
- * @b: constant byte
- * @n: first bytes to change
+ * @b: byte
+ * @n: integer numb
+ *
  * Return: pointer to modified string
  */
 char *_memset(char *s, char b, unsigned int n)

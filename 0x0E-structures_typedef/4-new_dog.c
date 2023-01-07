@@ -1,15 +1,15 @@
-#include "dog.h"
+#include"dog.h"
 #include <stdlib.h>
+/*
+ * _strlen - Finds the                                                                                                                                              * @str: The string to be measured. 
+ * Return: The length of the strin
+ */   
 
 int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 
-/**
- * _strlen - Finds the length of a string.
- * @str: The string to be measured.
- * Return: The length of the string.
- */
+
 int _strlen(char *str)
 {
 	int len = 0;
@@ -32,9 +32,9 @@ char *_strcopy(char *dest, char *src)
 	int index = 0;
 
 	for (index = 0; src[index]; index++)
-		dest[index] = src[index];
+		dest[index] = src[index]
 
-	dest[index] = '\0';
+	dest[index] = '0';
 
 	return (dest);
 }
@@ -43,7 +43,7 @@ char *_strcopy(char *dest, char *src)
  * new_dog - Creates a new dog.
  * @name: The name of the dog.
  * @age: The age of the dog.
- * @owner: The owner of the dog.
+ * @owner: The owner of the dog
  * Return: The new struct dog.
  */
 dog_t *new_dog(char *name, float age, char *owner)
