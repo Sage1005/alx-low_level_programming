@@ -1,36 +1,38 @@
 #include <stdio.h>
-/**
- * main - Write a program that prints the numbers from 1 to 100, followed by
- * a new line. But for multiples of  three print Fizz instead pf the number
- * and for the multiples of five print Buzz, For numbers which are
- * multiples of both three and five FizzBuzz.
- *
- * Return: Return 0
- */
 
+/**
+ * main - check the code
+ * Return: void
+ */
 int main(void)
 {
-	int count;
+	int i = 1;
 
-	for (count = 1; count < 100; count++)
+	while (i <= 100)
 	{
-		if ((count % 5 == 0) && (count % 3 == 0))
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
-		else if  (count % 3 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
-		else if (count % 5 == 0)
+		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", count);
+			printf("%i", i);
 		}
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+		i++;
 	}
-	printf("Buzz\n");
+	putchar('\n');
+
 	return (0);
 }

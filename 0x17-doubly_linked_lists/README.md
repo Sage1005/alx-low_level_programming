@@ -1,36 +1,16 @@
-# Doubly linked lists
-General
+i# 0x17. C - Doubly linked lists
 
-What is a doubly linked list
+## Description
+Further data structures and tasks in C.
+Doubly linked lists - traversible forward and backward.
 
-How to use doubly linked lists
-
-Start to look for the right source of information without too much help
-
-
-### More Info
-## Please use this data structure for this project:
-
- * struct dlistint_s - doubly linked list
- * @n: integer
- * @prev: points to the previous node
- * @next: points to the next node
- *
- * Description: doubly linked list node structure
- * 
-
-typedef struct dlistint_s
-
-{
-  
-  int n;
-    
-  struct dlistint_s *prev;
-    
-  struct dlistint_s *next;
-
-} dlistint_t;
-
-
-
-![final](https://static.packt-cdn.com/products/9781785285493/graphics/B05348_05_11.jpg)
+## Tasks
+* [0-print_dlistint.c](0-print_dlistint.c)
+* [1-dlistint_len.c](1-dlistint_len.c)
+* [2-add_dnodeint.c](2-add_dnodeint.c)
+* [3-add_dnodeint_end.c](3-add_dnodeint_end.c)
+* [4-free_dlistint.c](4-free_dlistint.c)
+* [5-get_dnodeint.c](5-get_dnodeint.c)
+* [6-sum_dlistint.c](6-sum_dlistint.c)
+* [7-insert_dnodeint.c](7-insert_dnodeint.c)
+* [8-delete_dnodeint.c](8-delete_dnodeint.c)

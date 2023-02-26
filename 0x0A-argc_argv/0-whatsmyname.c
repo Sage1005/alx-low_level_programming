@@ -1,9 +1,10 @@
 #include <stdio.h>
+
 /**
- * main - prints its name
- * @argc: param
- * @argv: an array of a command listed
- * Return: 0 on sucees
+ * main - function
+ * @argc: offset count
+ * @argv: offset value
+ * Return: 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {

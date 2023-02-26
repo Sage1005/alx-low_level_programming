@@ -1,33 +1,37 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - entry point
- *
- * Description: it prints all possible
- * different combination of two digits
- * seprated by comma and space
- * Return: 0 Always
+ * main - main block to be executed
+ * Description: write a program that prints all the combinations of two digits
+ * numbers to be seperated with ,, followed by a space
+ * Return: 0 Success
  */
 int main(void)
 {
-	int num1, num2;
+	int c;
+	int d = 0;
 
-	for (num1 = 0; num1 <= 8; num1++)
+	while (d < 10)
 	{
-		for (num2 = num1 + 1; num2 <= 9; num2++)
+		c = 0;
+
+		while (c < 10)
 		{
-
-			putchar((num1 % 10) + '0');
-			putchar((num2 % 10) + '0');
-
-			if (num1 == 8 && num2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			if (d != c && d < c)
+			{
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c++;
 		}
+		d++;
 	}
-
 	putchar('\n');
-	return (0);
 
+	return (0);
 }

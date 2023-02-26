@@ -1,18 +1,22 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 /**
- * main - entry point
- *
- * Description: it prints the alphabets
- * in reverse manner
- * Return: 0 always
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
  */
 int main(void)
 {
-	char alp;
+	char c = 'z';
 
-	for (alp = 'z'; alp >= 'a'; alp--)
-		putchar(alp);
+	while (c >= 'a')
+	{
+		putchar(c);
+		c--;
+	}
+
 	putchar('\n');
-
 	return (0);
 }

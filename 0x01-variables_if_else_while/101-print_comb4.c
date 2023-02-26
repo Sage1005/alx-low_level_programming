@@ -1,33 +1,46 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - entry point
- *
- * Description: prints combination
- * of 3 digits separated by comma and space
- * Return: 0 always
+ * main - main block to be executed
+ * Description: Write a program that prints all possible
+ * different combinations of three digits
+ * Return: 0 Success
  */
 int main(void)
 {
-	int a, b, c;
+	int c;
+	int d;
+	int e = 0;
 
-	for (a = 0; a <= 7; a++)
+	while (e < 10)
 	{
-		for (b = a + 1; b <= 8; b++)
+		d = 0;
+
+		while (d < 10)
 		{
-			for (c = b + 1; c <= 9; c++)
+			c = 0;
+
+			while (c < 10)
 			{
-				putchar((a % 10) + '0');
-				putchar((b % 10) + '0');
-				putchar((c % 10) + '0');
+				if (c != d && d != e && e < d && d < c)
+				{
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
 
-				if (a == 7 && b == 8 && c == 9)
-					continue;
-
-				putchar(',');
-				putchar(' ');
+					if (c + d + e != 9 + 8 + 7)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				c++;
 			}
+			d++;
 		}
+		e++;
 	}
 	putchar('\n');
+
 	return (0);
 }

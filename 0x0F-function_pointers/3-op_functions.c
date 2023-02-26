@@ -1,10 +1,11 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * op_add - addition operator
  * @a: first int
- * @b: second intReturn: sum of 2 numbers
+ * @b: second int
+ * Return: sum of 2 numbers
  */
 int op_add(int a, int b)
 {
@@ -52,9 +53,9 @@ int op_div(int a, int b)
 
 /**
  * op_mod - get remainder of the division of 2 numbers
- *  @a: first int
- *  @b: second int
- *  Return: remainder of division of the numbers
+ * @a: first int
+ * @b: second int
+ * Return: remainder of division of the numbers
  */
 int op_mod(int a, int b)
 {

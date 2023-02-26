@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * string_nconcat - concatentes 2 strings
- * @s1: first str
- * @s2: second str
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
  * @n: index
  * Return: char pointer
  */
@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		size1++;
 	}
-	
+
 	while (s2[size2] != '\0')
 	{
 		size2++;

@@ -1,24 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - prints name
- * @argc: params
- * @argv: array
- * Return: 0 
+ * main - multiplies two numbers
+ * @argc: n args
+ * @argv: arr args
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int result, num1, num2;
+	int i, val = 1;
 
 	if (argc != 3)
 	{
-		printf("%s\n", "Error");
+		printf("Error\n");
 		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
+	for (i = 1; i < argc; i++)
+	{
+		val *= atoi(argv[i]);
+	}
+	printf("%d\n", val);
 
-	printf("%d\n", result);
 	return (0);
 }

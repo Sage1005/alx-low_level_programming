@@ -1,16 +1,16 @@
 #include "main.h"
+
 /**
  * print_alphabet - entry point
- *
- * Description: it prints all alphabet
- * in llower case using _putchar
- * Return: 0 when successful
+ * Return: 0 Success
  */
 void print_alphabet(void)
 {
-	char letter;
+	char j;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
+	for (j = 'a'; j <= 'z'; j++)
+	{
+		_putchar(j);
+	}
 	_putchar('\n');
 }

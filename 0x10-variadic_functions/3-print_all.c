@@ -59,5 +59,3 @@ void print_str(char *s)
 	}
 	printf("(nil)");
 }
-
-

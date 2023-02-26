@@ -1,31 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 /**
- * main - prints its name
- * @argc: param
- * @argv: an array of a command listed
- * Return: 0 for succes
+ * main - adds positive numbers
+ * @argc: n args
+ * @argv: arr args
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int result = 0, num, i, j, k;
+	unsigned int i, sum, num;
 
-	for (i = 1; i < argc; i++)
+	sum = 0;
+
+	if (argc < 3)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		printf("%d\n", 0);
+		return (0);
+	}
+	while (argc-- && argc > 0)
+	{
+		for (i = 0; argv[argc][i] != '\0'; i++)
 		{
-			if (argv[i][j] > '9' || argv[i][j] < '0')
+			if (!(isdigit(argv[argc][i])))
 			{
-				printf("%s\n", "Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
+		num = atoi(argv[argc]);
+		sum += num;
 	}
-	for (k = 1; k < argc; k++)
-	{
-		num = atoi(argv[k]);
-		result += num;
-	}
-	printf("%d\n", result);
-	return (0);
+	printf("%d\n", sum);
+
+	return (sum);
 }

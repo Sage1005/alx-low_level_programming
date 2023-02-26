@@ -1,11 +1,11 @@
-
 #include "main.h"
+
 /**
  * _memset - copy char
- * @s: str
+ * @s: string
  * @b: input
  * @n: bytes
- * Return: str
+ * Return: string
  */
 char *_memset(char *s, char b, unsigned int n)
 {

@@ -1,30 +1,28 @@
 #include "main.h"
 
 /**
- * leet - converts string to leet
- *
- * @c: character string pointer
- * Return: char pointer
+ * leet - transform to leet
+ * @s: char array string type
+ * Return: s transformed
  */
-char *leet(char *c)
+char *leet(char *s)
 {
-	int i = 0, j;
-	char a[] = {'a', 'e', 'o', 't', 'l'}, b[] = {'A', 'E', 'O', 'T', 'L'},
-        leet[] = {'4', '3', '0', '7', '1'};
+	int i, ii;
+	char s1[] = "aeotl";
+	char S1[] = "AEOTL";
+	char s2[] = "43071";
 
-        while (c[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		j = 0;
-		while (j < 5)
+		for (ii = 0; ii < 5; ii++)
 		{
-			if (c[i] == a[j] || c[i] == b[j])
-				c[i] = leet[j];
-			j++;
+			if (s[i] == s1[ii] || s[i] == S1[ii])
+			{
+				s[i] = s2[ii];
+				break;
+			}
 		}
-		i++;
 	}
-	return (c);
-}
 
-	
-		
+	return (s);
+}

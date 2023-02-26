@@ -1,27 +1,31 @@
 #include "main.h"
 
 /**
- * print_triangle - Write a function that prints a triangle,
- * followed by a new line
- * @size: dimensions of triangle
- * Return: nothing
- **/
-
+ * print_triangle - check
+ * @size : integer type
+ * Retutn: void
+ */
 void print_triangle(int size)
 {
-	int replay, count;
+	int i = 1, ii;
 
-	if (size < 1)
+	while (i <= size && size > 0)
 	{
-		_putchar('\n');
-		return;
-	}
-	for (replay = 1; replay <= size; replay++)
-	{
-		for (count = size - replay; count > 0; count--)
+		ii = 0;
+		while (ii < size - i)
+		{
 			_putchar(' ');
-		for (count = replay; count > 0; count--)
+			ii++;
+		}
+		ii = 0;
+		while (ii < i)
+		{
 			_putchar('#');
+			ii++;
+		}
 		_putchar('\n');
+		i++;
 	}
+	if (i == 1)
+		_putchar('\n');
 }

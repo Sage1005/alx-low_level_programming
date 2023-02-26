@@ -1,11 +1,11 @@
 #include "main.h"
+
 /**
- * _strncpy - a function that copys the string
- * @dest: input
- * @src: input
- * @n: integer
- *
- * Return: temp
+ * *_strncpy - finds the length of the string
+ * @dest: pointer to the string
+ * @src: pointer
+ * @n: int
+ * Return: destination
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -13,6 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
+
 	for ( ; i < n; i++)
 		dest[i] = '\0';
 

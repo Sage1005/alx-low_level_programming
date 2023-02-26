@@ -1,15 +1,20 @@
 #include "main.h"
+
 /**
- * factorial - returns the fact of a given numb
- * @n: number to factorize
- *
- * Return: int
+ * factorial - factorial n
+ * @n: integer arams
+ * Return: recursion
  */
 int factorial(int n)
 {
 	if (n < 0)
+	{
 		return (-1);
-	else if (n == 0)
+	}
+	if (n == 1)
+	{
 		return (1);
+	}
+
 	return (n * factorial(n - 1));
 }

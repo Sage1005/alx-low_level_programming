@@ -1,13 +1,15 @@
 #include <stdio.h>
+
 /**
- * main -> writes the char 
- * @argc: params
- * @argv: an array
- *
- * Return: 0 on success
+ * main - prints its name, followed by a new line
+ * @argc: n args
+ * @argv: arr args
+ * Return: 0
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("%d\n", argc - 1);
+	if (argc > 0)
+		printf("%d\n", argc - 1);
+
 	return (0);
 }

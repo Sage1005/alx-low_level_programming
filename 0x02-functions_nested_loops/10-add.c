@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * add - adds two integers
- * @a: first integer
- * @b: second integer
- * Return: 0 always
+ * add - returns sum of parameters
+ * @a: int type
+ * @b: int typr
+ * Return: 0
  */
 int add(int a, int b)
 {

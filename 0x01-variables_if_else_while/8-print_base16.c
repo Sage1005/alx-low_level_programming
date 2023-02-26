@@ -1,23 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - entry point
- *
- * Description: its prints all
- * hexadecimal numbers
- * Return: 0 always
+ * main - main block to be executed
+ * Description: printing base 10 digits
+ * Return: 0 Success
  */
 int main(void)
 {
-
-	int i;
-	char alpha;
-
-	for (i = 0; i < 10; i++)
-		putchar((i % 10) + '0');
-	for (alpha = 'a'; alpha < 'g'; alpha++)
-		putchar(alpha);
-	putchar('\n');
-
-	return (0);
+char ch;
+for (ch = '0'; ch <= '9'; ch++)
+{
+	putchar(ch);
 }
-
+for (ch = 'a'; ch <= 'f'; ch++)
+{
+	putchar(ch);
+}
+putchar('\n');
+return (0);
+}

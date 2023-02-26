@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * len - returns length of str
  * @str: string to be counted
@@ -11,16 +12,16 @@ int len(char *str)
 
 	if (str != NULL)
 	{
-		while (str[len])len++;
-
+		while (str[len])
+			len++;
 	}
 	return (len);
 }
 
 /**
  * num_words - counts the number of words in str
- *  @str: string to be used
- *  Return: number of words
+ * @str: string to be used
+ * Return: number of words
  */
 int num_words(char *str)
 {
@@ -40,7 +41,7 @@ int num_words(char *str)
 		else
 		{
 			i++;
-		}	
+		}
 	}
 	return (words);
 }
@@ -50,6 +51,7 @@ int num_words(char *str)
  * @str: string to be splitted
  * Return: pointer to the array of splitted words
  */
+
 char **strtow(char *str)
 {
 	char **split;

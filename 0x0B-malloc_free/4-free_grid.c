@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * free_grid - removing memory allocation
  * @grid: memory block to be freed
